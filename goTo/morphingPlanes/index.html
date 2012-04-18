@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>HTML5 & video texture (THREE.js)</title>
+        <META NAME="language"    CONTENT="en">
+        <META NAME="author"      CONTENT="Florian Wokurka">
+        <META NAME="copyright"   CONTENT="feel free to use">
+        <META NAME="description" CONTENT="HHTML5 & video texture (THREE.js)">
+        <META NAME="keywords"    CONTENT="HTML5, video, texture, three.js">
+        <META NAME="page-topic"  CONTENT="HTML5">
+        <META NAME="robots"      CONTENT="index,follow">
+        <link rel="stylesheet" type ="text/css" href="./style/style.css"/> 
+
+    </head > 
+   
+
+    <body >     
+        
+        <header id="top" class="shadow">
+            <hgroup id="logo">
+                <h1>HTML5 video & THREE.js</h1>
+                <h2>Animation and intersection</h2>
+            </hgroup>
+            <nav id="navigation"> 
+				<a  href="../../index.html" id="download">Home</a>
+				<a  href="../../video/video.rar" id="download">Download videos</a>
+                <a  href="./archive/morphingPlane.rar" id="download">Download code</a>
+            </nav>
+        </header>
+
+		<div id="fillWithThis">
+			<article id="content"> 
+				
+			... loading ...  
+				
+			</article>
+			
+		   <article id="controls" >
+			<table id="control" >
+					<tbody>
+						<tr> 
+							<td>  Duration (ms)
+							</td> 
+							<td class="value"> 
+								<input type="range" id="duration" min="200" max="5000" value="1000" step="100" /> 
+							</td> 
+							<td> Click to morph all objects or hover single objects to start morphing</td>
+							<td class="value"> 
+								<input  id="ButtonMorph" type="button" value="Morph" />  
+							</td> 
+						</tr>
+						<tr> 
+							<td> 
+							</td> 
+							<td class="value" id="durationOutput"> 1000
+							</td> 
+							<td>  
+							</td>
+							<td class="value"> 
+								
+							</td>   
+						</tr>
+						<tr> 
+							<td>  
+							</td> 
+							<td class="value"> 
+								
+							</td> 
+							<td>     </td>
+							<td class="value"> 
+								
+							</td>   
+						</tr>
+						<tr> 
+							<td></td> 
+							<td class="value" id="numYOutput"> </td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr> 
+							<td></td> 
+							<td></td> 
+							<td></td>
+							<td></td>
+						</tr>
+						<tr> 
+							<td></td> 
+							<td class="value" id="partBouncingOutput"></td> 
+							<td> Render   </td>
+							<td class="value"> 
+								<input  id="checkBoxRender" type="checkbox"  checked/>   
+							</td>   
+						</tr>                                                                                  
+					</tbody>
+			</table>                                                                                                                                                            
+		   </article>  
+		   
+		   <article class="copyright">
+				Big Buck Bunny video: &copy; Copyright Blender Foundation 
+				<a href="http://www.bigbuckbunny.org">www.bigbuckbunny.org</a>      
+				(<a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>)     
+			</article>			   
+		   
+		</div>
+		
+        <footer>
+            <header>
+                <h3>Florian Wokurka</h3>
+	
+            </header>
+            <div>
+                Last modification: <time datetime="2011-11-25">2011-11-25</time>
+				[experimental status]
+            </div>
+        </footer>
+		
+		<article id="invisibleVideo" >
+			<video id="myVideo" width="480" height="306" 
+				preload
+				autoplay
+				controls
+				loop
+			>
+				<source src="../../video/BBB.webm" type='video/webm; codecs="vp8, vorbis"'>
+				<source src="../../video/BBB.ogv"  type='video/ogg; codecs="theora, vorbis"'>
+				<source src="../../video/BBB.mp4"  >
+				If you can read this, your browser really needs to be updated!
+			</video>
+			<video id="myVideo2" width="480" height="306" 
+				preload
+				autoplay
+				controls
+				loop
+			>
+				<source src="../../video/smile.webm" type='video/webm; codecs="vp8, vorbis"'>
+				<source src="../../video/smile.mp4"  >
+				If you can read this, your browser really needs to be updated!
+			</video>			
+		</article>
+		 <!-- Piwik -->
+		<script type="text/javascript">
+		var pkBaseURL = (("https:" == document.location.protocol) ? "https://html5.quickbrownfox.bplaced.de/piwik/" : "http://html5.quickbrownfox.bplaced.de/piwik/");
+		document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+		</script><script type="text/javascript">
+		try {
+		var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 1);
+		piwikTracker.trackPageView();
+		piwikTracker.enableLinkTracking();
+		} catch( err ) {}
+		</script><noscript><p><img src="http://html5.quickbrownfox.bplaced.de/piwik/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript>
+		<!-- End Piwik Tracking Code --> 
+    </body>
+<script type="text/javascript" src="./src/html5slider.js"></script>
+<script type="text/javascript" src="./src/Three.js"></script>
+<script type="text/javascript" src="./src/MorphingPlane.js"></script>
+<script type="text/javascript" src="./src/main.js"></script>
+<script type="text/javascript" src="./src/contentControl.js"></script>
+</html>
+

@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>HTML5 Examples (&lt;video&gt; , &lt;canvas&gt;, THREE.js)</title>
+        <META NAME="language"    CONTENT="en">
+        <META NAME="author"      CONTENT="Florian Wokurka">
+        <META NAME="copyright"   CONTENT="Feel free to use">
+        <META NAME="description" CONTENT="HTML5 examples">
+        <META NAME="keywords"    CONTENT="HTML5, canvas, video, THREE.js, WebGL">
+        <META NAME="page-topic"  CONTENT="HTML5 examples">
+        <META NAME="robots"      CONTENT="index,follow">
+        <link rel="stylesheet" type ="text/css" href="./style/style.css"/> 
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+		<script type="text/javascript" src="./src/contentControl.js"></script>
+		<script type="text/javascript" src="./src/Three.js"></script>
+		<script type="text/javascript" src="./src/html5slider.js"></script>
+		<script type="text/javascript" src="./src/mousePos.js"></script>
+		<script type="text/javascript" src="./src/slidingContent.js"></script>	
+    </head > 
+   
+
+    <body >     
+        
+        <header id="top" class="shadow">
+			<img src="./images/HTML5lab.jpg" alt="HTML5 Laboratory">
+			<a id="show"= href="#" class="navigation"> Show examples </a>
+        </header>
+
+
+        <div id="slider" class="shadow">    
+
+<div class="scrollContainer">		
+			
+				
+		<div class="panel" id="panel_1">
+			<article>
+				<h1>Video texture on a morphing plane</h1>
+				<p>
+					(Chrome, Firefox -><a href="#" class="tooltip">info</a><-)
+				</p>								
+				<a  href="./goTo/morphingVideo/index.html" id="morphingPlane">
+					<img  src="./images/morphingVideo.jpg"/>
+				</a>
+			</article>
+		</div>		
+		
+		<div class="panel" id="panel_2">
+		<article>
+			<h1>Video texture on cubes (with THREE.js)</h1>
+			<p>
+				(Chrome, Firefox -><a href="#" class="tooltip">info</a><-)
+				(Chrome, Firefox -><a href="#" class="tooltip">info</a><-)
+			</p>								
+			<a  href="./goTo/videoTexture/index.html" id="videoTexture">
+				<img   src="./images/videoTexture.jpg"/>
+			</a>
+		</article>	
+		</div>
+		
+		<div class="panel" id="panel_3">
+		<article>
+			<h1>&lt;video&gt; - content manipulation</h1>
+			<p>
+				(Chrome, Firefox)
+			</p>								
+			<a  href="./goTo/contentManipulation/index.html" id="contentManipulation">
+				<img   src="./images/contentManipulation.jpg"/>
+			</a>
+
+		</article>	
+		</div>	
+		
+		<div class="panel" id="panel_4">
+		<article>
+			<h1>&lt;canvas&gt; - canvas manipulation</h1>
+			<p>
+				(Chrome, Firefox, Safari, IE9)
+			</p>								
+			<a  href="./goTo/canvasManipulation/index.html" id="canvasManipulation">
+				<img   src="./images/canvasManipulation.jpg"/>
+			</a>
+		</article>							
+		</div>	
+
+		<div class="panel" id="panel_5">
+			<article>
+			<h1>&lt;canvas&gt; with Particles 3D</h1>
+			<p>
+				(Chrome, Firefox, Opera, Safari, IE9)
+			</p>								
+			<a  href="./goTo/Particles3D/index.html" id="particles3D">
+				<img  src="./images/particles3D.jpg"/>
+			</a>
+			</article>
+		</div>	
+
+		<div class="panel" id="panel_6">
+			<article>
+			<h1>&lt;canvas&gt; with Particles</h1>
+			<p>
+				(Chrome, Firefox, Opera, Safari, IE9)
+			</p>								
+			<a  href="./goTo/Particles2D/index.html" id="particles2D">
+				<img  src="./images/particles2D.jpg"/>
+			</a>
+			</article>
+		</div>	
+
+		<div class="panel" id="panel_7">
+			<article>
+				<h1>Morphing planes and 3D hover</h1>
+				<p>
+					(Chrome, Firefox -><a href="#" class="tooltip">info</a><-)
+				</p>								
+				<a  href="./goTo/morphingPlanes/index.html" id="morphingPlanes">
+					<img  src="./images/morphingVideo.jpg"/>
+				</a>
+			</article>
+		</div>				
+					
+	</div>		
+
+        </div>
+		
+		<div id="fillThis" class="shadow">
+		
+		
+		
+		
+		</div>
+		
+        <footer class="shadow">
+		<div style="padding:5px">
+            <div>
+			/** <br> 
+			* Written by Florian Wokurka </br>
+			* browse code on <a href="https://github.com/notiontaxi">GitHub</a> <br>
+			* follow me on <a href="https://twitter.com/#!/_QuickBrownFox_">Twitter</a> <br>
+			* all examples in experimental status <br>
+			*/
+            </div>
+            <div class="imp">			
+				<a href="#" class="impressum">Impressum</a> <br>
+            </div>
+		</div>	
+        </footer>
+
+			<article id="invisibleVideo" class="invisible" >
+				<video id="myVideo" width="480" height="306" 
+					preload
+					loop
+				>
+						<source src="./video/video/BBB.webm" type='video/webm; codecs="vp8, vorbis"'>
+						<source src="./video/BBB.ogv"  type='video/ogg; codecs="theora, vorbis"'>
+						<source src="./video/BBB.mp4"  >
+						
+					If you can read this, your browser really needs to be updated!
+				</video>
+				
+				<video id="myVideo_z" width="480" height="306" 
+					preload
+					loop
+				>
+					<source src="./video/smile.webm" type='video/webm; codecs="vp8, vorbis"'>
+					<source src="./video/smile.mp4"  >
+					If you can read this, your browser really needs to be updated!
+				</video>			
+			</article>		
+		
+    </body>
+
+</html>
+

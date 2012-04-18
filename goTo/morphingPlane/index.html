@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>HTML5 video & morphing plane</title>
+        <META NAME="language"    CONTENT="en">
+        <META NAME="author"      CONTENT="Florian Wokurka">
+        <META NAME="copyright"   CONTENT="feel free to use">
+        <META NAME="description" CONTENT="HHTML5 & video texture (THREE.js)">
+        <META NAME="keywords"    CONTENT="HTML5, video, texture, three.js, morphing video">
+        <META NAME="page-topic"  CONTENT="HTML5">
+        <META NAME="robots"      CONTENT="index,follow">
+        <link rel="stylesheet" type ="text/css" href="../.././style/style.css"/> 
+
+    </head > 
+   
+
+    <body >     
+        
+        <header id="top" class="shadow">
+            <hgroup id="logo">
+                <h1>HTML5 video & THREE.js</h1>
+                <h2>Video texture and a morphing plane</h2>
+            </hgroup>
+				<a  href="../../index.html" class="navigation">Home</a>
+        </header>
+
+		<div id="fillWithThis">
+			<article id="content">   <!-- changed from content to 3Dcontent -->
+				
+			 Please wait ... loading ...   
+				
+			</article>
+			
+		   <article id="controls" >
+				<table id="control" >
+					<colgroup><col><col>
+					<colgroup><col><col>
+					<colgroup><col><col>
+					<colgroup><col><col>
+					<tbody>
+						<tr> 
+							<td>  Z-Position of the plane
+							</td> 
+							<td class="value"> 
+								<input type="range" id="zposi" min="-200" max="500" value="-200" step="10" /> 
+							</td>
+							<td> Dark colors to front</td>
+							<td class="value"> 
+								<input  id="checkBoxDarkness" type="checkbox"  />   
+							</td> 
+							
+						</tr>
+						<tr> 
+							<td> 
+							</td> 
+							<td class="value" id="zposiOutput"> -200
+							</td> 
+							<td></td>
+							<td></td>
+						</tr>
+						<tr> 
+							<td>  Detail (pixel per vertice)
+							</td> 
+							<td class="value"> 
+								<input type="range" id="detail" min="1" max="6" value="3" step="1" /> 
+							</td> 
+							<td> Change texture video</td>
+							<td class="value"> 
+								<input  id="checkBoxVideo" type="checkbox"  />   
+							</td>  
+						</tr>
+						<tr> 
+							<td></td> 
+							<td class="value" id="detailOutput"> 3</td>
+							<td> Change z-value video</td>
+							<td class="value"> 
+								<input  id="checkBoxZ" type="checkbox"  />   
+							</td>  
+						</tr>
+						<tr> 
+							<td></td> 
+							<td></td> 
+							<td></td>
+							<td></td>
+						</tr>
+						<tr> 
+							<td></td> 
+							<td class="value" id="partBouncingOutput"></td> 
+							<td> Render   </td>
+							<td class="value"> 
+								<input  id="checkBoxRender" type="checkbox"  checked/>   
+							</td>   
+						</tr>                                                                                  
+					</tbody>
+		   </table>                                                                                                                                                            
+		   </article>  
+		   <article class="copyright">
+				Big Buck Bunny video: &copy; Copyright Blender Foundation 
+				<a href="http://www.bigbuckbunny.org">www.bigbuckbunny.org</a>      
+				(<a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>)
+			</article>	
+			
+
+		
+				
+	   </div>
+			<article id="invisibleVideo" class="invisible" >
+				<video id="myVideo_show" width="480" height="306" 
+					mute
+					preload
+					autoplay
+					controls
+					loop
+					
+				>
+						<source src="./video/video/BBB.webm" type='video/webm; codecs="vp8, vorbis"'>
+						<source src="./video/BBB.ogv"  type='video/ogg; codecs="theora, vorbis"'>
+						<source src="./video/BBB.mp4"  >
+						
+					If you can read this, your browser really needs to be updated!
+				</video>
+				
+				<video id="myVideo_z" width="480" height="306" 
+					preload
+					autoplay
+					controls
+					loop
+				>
+					<source src="./video/smile.webm" type='video/webm; codecs="vp8, vorbis"'>
+					<source src="./video/smile.mp4"  >
+					If you can read this, your browser really needs to be updated!
+				</video>			
+			</article>	   
+        <footer>
+            <header>
+                <h3>Florian Wokurka</h3>
+	
+            </header>
+
+			<div>
+                Last modification: <time datetime="2011-11-10">2011-11-10</time>
+				[experimental status]
+            </div>
+        </footer>
+		
+
+   
+   
+		</body>
+	<script type="text/javascript" src="./src/MorphingPlane.js"></script>
+</html>
+

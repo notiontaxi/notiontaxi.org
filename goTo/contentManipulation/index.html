@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>HTML5 video - Content manipulation</title>
+        <META NAME="language"    CONTENT="en">
+        <META NAME="author"      CONTENT="Florian Wokurka">
+        <META NAME="copyright"   CONTENT="feel free to use">
+        <META NAME="description" CONTENT="HTML5 video manipulation">
+        <META NAME="keywords"    CONTENT="HTML5, canvas, video, video manipulation, greyscale, bluewall, awesomeness">
+        <META NAME="page-topic"  CONTENT="HTML5 video">
+        <META NAME="robots"      CONTENT="index,follow">
+        <link rel="stylesheet" type ="text/css" href="../.././style/style.css"/> 
+        <script src="./src/html5slider.js"></script>
+    </head > 
+   
+
+    <body >     
+        
+        <header id="top" class="shadow">
+            <hgroup id="logo">
+                <h1>HTML5 canvas & video</h1>
+                <h2>And some nice video effects!</h2>
+            </hgroup>
+
+				<a  href="../../index.html" class="navigation">Home</a>
+
+        </header>
+
+		<div id="fillWithThis">
+			<article id="content">   <!-- changed from content to 3Dcontent -->
+				<article id="leftContent">
+				
+					<video id="myInnerVideo" 
+						   preload
+						   autoplay
+						   controls
+						   loop
+					>
+						
+						<source src="./video/video/BBB.webm" type='video/webm; codecs="vp8, vorbis"' >
+						<source src="./video/BBB.ogv"  type='video/ogg; codecs="theora, vorbis"'>
+						<source src="./video/BBB.mp4">
+						
+						If you can read this, your browser really needs to be updated!
+					</video>
+					
+				</article>
+				<article id="rightContent">
+					<canvas id="myCanvas"  >
+					
+					If you can read this, your browser really needs to be updated!
+					</canvas>
+				</article>
+			</article>
+        
+		   <article id="controls" >
+				<table id="control" class="shadow">
+					<tbody>
+						<tr> 
+							<td> Size of the video
+							</td> 
+							<td class="value"> 
+								<input type="range" id="videoSize" min="10" max="480" value="480" step="5" /> 
+							</td> 
+							<td> Filter (click into the canvas, to change the filtered color)
+							</td>
+							<td class="value" > 
+								<input id="checkBoxNoBlack" type="checkbox"  />  
+							</td>   
+						</tr>
+						<tr> 
+							<td>
+							</td> 
+							<td class="value" id="videoSizeOutput"> 480
+							</td> 
+							<td> Greyscale
+							</td>
+							<td class="value"> 
+								<input  id="checkBoxGreyscale" type="checkbox"  /> 
+							</td>   
+						</tr>
+						<tr> 
+							<td> Filter range
+							</td> 
+							<td class="value"> 
+								<input type="range" id="filterRange" min="1" max="100" value="20" step="1" /> 
+							</td> 
+							<td> Invert   </td>
+							<td class="value"> 
+								<input  id="checkBoxInvert" type="checkbox"  />   
+							</td>   
+						</tr>
+						<tr> 
+							<td></td> 
+							<td class="value" id="filterRangeOutput"> 20</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr> 
+							<td></td> 
+							<td></td> 
+							<td></td>
+							<td></td>
+						</tr>
+						<tr> 
+							<td></td> 
+							<td class="value" id="partBouncingOutput"></td> 
+							<td> Render   </td>
+							<td class="value"> 
+								<input  id="checkBoxRender" type="checkbox"  checked/>   
+							</td>   
+						</tr>                                                                                  
+					</tbody>
+				</table>                                                                                                                                                                         
+		   </article>  	
+		   
+		   <article class="copyright">
+				Big Buck Bunny video: &copy; Copyright Blender Foundation 
+				<a href="http://www.bigbuckbunny.org">www.bigbuckbunny.org</a>      
+				(<a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>)     
+			</article>	
+		
+		</div>
+		
+        <footer>
+            <header>
+                <h3>Florian Wokurka</h3>
+            </header>
+            <div>
+                Last modification: <time datetime="2011-11-03">2011-11-03</time>
+				[experimental status]
+            </div>
+        </footer>
+	<script type="text/javascript" src="./src/contentControl.js"></script>
+	<script type="text/javascript" src="./src/FilterColor.js"></script>
+	<script type="text/javascript" src="./src/main.js"></script>
+  
+    </body>
+
+</html>
+
+

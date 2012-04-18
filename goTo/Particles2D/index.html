@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>HTML5 Canvas - example with particles</title>
+        <META NAME="language"    CONTENT="en">
+        <META NAME="author"      CONTENT="Florian Wokurka">
+        <META NAME="copyright"   CONTENT="feel free to use">
+        <META NAME="description" CONTENT="HTML5 Canvas example with particles">
+        <META NAME="keywords"    CONTENT="HTML5, canvas, particles">
+        <META NAME="page-topic"  CONTENT="HTML5 Canvas">
+        <META NAME="robots"      CONTENT="index,follow">
+        <link rel="stylesheet" type ="text/css" href="../.././style/style.css"/> 
+
+    </head > 
+   
+
+    <body >     
+        
+        <header id="top" class="shadow">
+            <hgroup id="logo">
+                <h1>HTML5 Canvas</h1>
+                <h2>And the particles of doom!</h2>
+            </hgroup>
+
+				<a  href="../../index.html" class="navigation">Home</a>           
+
+        </header>
+
+		<div id="fillWithThis">
+			<article id="content">   <!-- changed from content to 3Dcontent -->
+				<canvas id="myCanvas" width="990" height="500" class="fullSizeCanvas">
+				 If you can read this, your browser really needs to be updated!
+				</canvas>
+			</article>
+			
+		   <article id="controls" >
+		   <table id="control" class="shadow">
+					<colgroup><col><col>
+					<colgroup><col><col>
+					<colgroup><col><col>
+					<colgroup><col><col>
+					<tbody>
+					   <tr> <td> Maximum number of particles     </td> <td class="value"> <input type="range" id="PartMaxNum" min="1" max="20000" value="2000" step="50" />         </td> <td> Height of a particle </td> <td class="value"> <input type="range" id="partHeight" min="1" max="50" value="8" step="1" />  </td><td> Gravity  </td><td class="value" > <input id="checkBoxGravity" type="checkbox" checked="checked" />  </td><td>                                                                           </td></tr>
+					   <tr> <td>                                 </td> <td class="value" id="partMaxNumOutput"> 2000                                                                </td> <td>                      </td> <td class="value" id="partHeightOutput"> 8                                                     </td><td>          </td><td>                                                                                  </td><td>                                                                           </td></tr>
+					   <tr> <td> Increase / decrease per frame   </td> <td class="value"> <input type="range" id="PartIncrease" min="0" max="200" value="15" step="1" />            </td> <td> Width of a particle  </td> <td class="value"> <input type="range" id="partWidth" min="1" max="50" value="1" step="1" />   </td><td> Friction </td><td class="value"> <input  id="checkBoxFriction" type="checkbox" checked="checked" /> </td><td>                                                                           </td></tr>
+					   <tr> <td>                                 </td> <td class="value" id="PartIncreaseOutput"> 15                                                                </td> <td>                      </td> <td class="value" id="partWidthOutput"> 1                                                      </td><td>          </td><td>                                                                                  </td><td class="value"> <input type="button" id="btnImpulse" value="impulse" />     </td></tr>
+					   <tr> <td> Bouncing                        </td> <td class="value"> <input type="range" id="PartBouncing" min="0.0" max="1.0" value="0.6" step="0.1" />       </td> <td>                      </td> <td>                                                                                           </td><td>          </td><td>                                                                                  </td><td class="value"> <input type="button" id="btnPause"   value=" pause " />     </td></tr>
+					   <tr> <td>                                 </td> <td class="value" id="partBouncingOutput"> 0.6                                                               </td> <td>                      </td> <td>                                                                                           </td><td>          </td><td>                                                                                  </td><td class="value"> <input type="button" id="btnReset"   value=" &nbsp; reset &nbsp; " />     </td></tr>
+					</tbody>
+			</table>                                                                                                                                                                         
+		   </article>  
+        </div>
+        <footer>
+            <header>
+                <h3>Florian Wokurka</h3>
+            </header>
+            <div>
+                Last modification: <time datetime="2011-11-03">2011-11-03</time>
+				[experimental status]
+            </div>
+        </footer>
+
+		<script type="text/javascript" src="./src/html5slider.js"></script>
+		<script type="text/javascript" src="./src/particles.js"></script>
+		<script type="text/javascript" src="./src/main.js"></script>
+		<script type="text/javascript" src="./src/contentControl.js"></script>
+  
+   </body>
+
+</html>
+
