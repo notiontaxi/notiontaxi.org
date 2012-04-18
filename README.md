@@ -1,11 +1,9 @@
 Sourcecode of [notiontaxi.org](http://notiontaxi.org)
 ------------------------------
-Here u can browse some of my HTML5/THREE.js/jquery experiments.
+Here u can browse some of my HTML5 / THREE.js / jquery experiments.
 
-I hope I'll find soon time to code more examples.
+I hope I'll find time to code more examples soon.
 
-My next experiments will (hopefully) include some functionality
-of Web Worker, ammo.js and brunch.
 
 
 
@@ -33,3 +31,13 @@ Quotes
 
 
 Have fun :)
+
+
+
+
+
+
+Next up
+-------
+
+My next experiments will (hopefully) include some functionality of Web Worker, ammo.js and brunch.
