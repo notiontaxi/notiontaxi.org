@@ -192,7 +192,7 @@ $(function() {
 			 // load dependencies
 				
 			// create content and slide it down
-			loadXY('./goTo/morphingPlane/index.html #fillWithThis', './goTo/morphingPlane/src/MorphingPlane.js',  function(){return new MorphingPlane();});
+			loadXY('./goTo/morphingPlane/content.html #fillWithThis', './goTo/morphingPlane/src/MorphingPlane.js',  function(){return new MorphingPlane();});
 					
 			return false;
 		});
@@ -203,7 +203,7 @@ $(function() {
 			 // load dependencies
 				
 			// create content and slide it down
-			loadXY('./goTo/videoTexture/index.html #fillWithThis', './goTo/videoTexture/src/VideoTexture.js',  function(){return new VideoTexture();});
+			loadXY('./goTo/videoTexture/content.html #fillWithThis', './goTo/videoTexture/src/VideoTexture.js',  function(){return new VideoTexture();});
 					
 			return false;
 		});
@@ -216,7 +216,7 @@ $(function() {
 				jQuery.getScript(	'./goTo/contentManipulation/src/FilterColor.js',function(){console.log("class FilterColor loaded")});
 				
 			// create content and slide it down
-			loadXY('./goTo/contentManipulation/index.html #fillWithThis', './goTo/contentManipulation/src/ContentManipulation.js',  function(){return new ContentManipulation();});
+			loadXY('./goTo/contentManipulation/content.html #fillWithThis', './goTo/contentManipulation/src/ContentManipulation.js',  function(){return new ContentManipulation();});
 					
 			return false;
 		});
@@ -229,7 +229,7 @@ $(function() {
 				jQuery.getScript(	'./goTo/canvasManipulation/src/Draggable.js',function(){console.log("class Draggable loaded")});
 				
 			// create content and slide it down
-			loadXY('./goTo/canvasManipulation/index.html #fillWithThis', './goTo/canvasManipulation/src/CanvasManipulation.js',  function(){return new CanvasManipulation();});
+			loadXY('./goTo/canvasManipulation/content.html #fillWithThis', './goTo/canvasManipulation/src/CanvasManipulation.js',  function(){return new CanvasManipulation();});
 					
 			return false;
 		});
@@ -244,7 +244,7 @@ $(function() {
 
 				jQuery.getScript(	'./goTo/particles3D/src/ParticleFor3D.js',function(){
 					console.log("class Particles loaded");
-					loadXY('./goTo/particles3D/index.html #fillWithThis', './goTo/particles3D/src/Particles3D.js',  function(){return new Particles3D();});
+					loadXY('./goTo/particles3D/content.html #fillWithThis', './goTo/particles3D/src/Particles3D.js',  function(){return new Particles3D();});
 				});
 
 	
@@ -258,10 +258,10 @@ $(function() {
 			if(!window.ParticleFor2D){
 				jQuery.getScript(	'./goTo/particles2D/src/ParticleFor2D.js',function(){
 					console.log("class Particles loaded")
-					loadXY('./goTo/particles2D/index.html #fillWithThis', './goTo/particles2D/src/Particles2D.js',  function(){return new Particles2D();});
+					loadXY('./goTo/particles2D/content.html #fillWithThis', './goTo/particles2D/src/Particles2D.js',  function(){return new Particles2D();});
 				});
 		}else		
-			loadXY('./goTo/particles2D/index.html #fillWithThis', './goTo/particles2D/src/Particles2D.js',  function(){return new Particles2D();});
+			loadXY('./goTo/particles2D/content.html #fillWithThis', './goTo/particles2D/src/Particles2D.js',  function(){return new Particles2D();});
 					
 			return false;
 		});
