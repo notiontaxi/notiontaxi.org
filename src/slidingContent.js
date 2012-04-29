@@ -170,7 +170,7 @@ $(function() {
 		particles3D
 		particles2D
 	*/
-	
+/*	
 	// --- morphing plane
 		$('#morphingPlanes').click(function() {
 			 // load dependencies
@@ -184,7 +184,8 @@ $(function() {
 					
 			return false;
 		});
-	// ---		
+	// ---
+*/	
 	
 	// --- morphing plane
 		$('#morphingPlane').click(function() {

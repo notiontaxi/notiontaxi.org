@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>HTML5 canvas manipulation</title>
+        <META NAME="language"    CONTENT="en">
+        <META NAME="author"      CONTENT="Florian Wokurka">
+        <META NAME="copyright"   CONTENT="feel free to use">
+        <META NAME="description" CONTENT="HTML5 canvas manipulation">
+        <META NAME="keywords"    CONTENT="HTML5, canvas, canvas manipulation, video, video manipulation">
+        <META NAME="page-topic"  CONTENT="HTML5 Canvas">
+        <META NAME="robots"      CONTENT="index,follow">
+        <link rel="stylesheet" type ="text/css" href="../.././style/style.css"/> 
+    </head > 
+   
+
+    <body >     
+        
+        <header id="top" class="shadow">
+            <hgroup id="logo">
+                <h1>HTML5 canvas & video</h1>
+                <h2>One video splitted into draggable canvases</h2>
+            </hgroup>
+            
+				<a  href="../../index.html" class="navigation">Home</a>
+
+        </header>
+
+		<div id="fillWithThis">
+			
+			<article id="content">
+					<!-- filled width js -->
+			</article>
+			
+		   <article id="controls" >
+		   <table id="control" >
+					<colgroup><col><col>
+					<colgroup><col><col>
+					<colgroup><col><col>
+					<colgroup><col><col>
+					<tbody>
+					   <tr> <td> Rotation		         		 </td> <td class="value"> <input type="range" id="videoSize" min="0" max="360" value="0" step="1" />     </td> <td> No White </td><td class="value" > <input id="checkBoxNoBlack" type="checkbox"  />  </td>   </tr>
+					   <tr> <td>                                 </td> <td class="value" id="videoSizeOutput"> 0                                                          </td> <td>          </td><td>                                                                 </td>   </tr>
+					   <tr> <td>     						 	 </td> <td class="value">           </td> <td> Invert   </td><td class="value"> <input  id="checkBoxInvert" type="checkbox"  />   </td>   </tr>
+					   <tr> <td>                                 </td> <td class="value" id="spacingOutput">                                                                </td> <td>          </td><td>                                                                 </td>   </tr>
+					   <tr> <td>     							 </td> <td>                      																			</td> <td> Greyscale</td><td class="value"> <input  id="checkBoxGreyscale" type="checkbox"  /> </td>  </tr>
+					   <tr> <td>                                 </td> <td class="value" id="partBouncingOutput">                                                           </td> <td>          </td><td>                                                                 </td>   </tr>                                                                                  </td></tr>
+					</tbody>
+		   </table>                                                                                                                                                                         
+		   </article> 
+		   
+		   <article class="copyright">
+				Big Buck Bunny video: &copy; Copyright Blender Foundation 
+				<a href="http://www.bigbuckbunny.org">www.bigbuckbunny.org</a>      
+				(<a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0</a>)     
+			</article>	
+
+			<article class="invisible">
+				<canvas id="myCanvasDummy" width="480" height="306"> </canvas>
+			</article>				
+			
+		</div>
+		
+        <footer>
+            <header>
+                <h3>Florian Wokurka</h3>
+
+            </header>
+            <div>
+                Last modification: <time datetime="2011-11-04">2011-11-04</time>
+				[experimental status]
+            </div>
+        </footer>
+		
+			<article class="invisible">
+				<video  id="myVideo" width="480" height="270" 
+					   preload
+					   controls
+				>
+					<source src="./video/video/BBB.webm" type='video/webm; codecs="vp8, vorbis"'>
+					<source src="./video/BBB.ogv"  type='video/ogg; codecs="theora, vorbis"'>
+					<source src="./video/BBB.mp4"  >
+					If you can read this, your browser really needs to be updated!
+				</video>
+				<canvas id="myCanvasDummy" width="480" height="306"> </canvas>
+			</article>	
+	
+		<script type="text/javascript" src="./goTo/canvasManipulation/src/Draggable.js"></script>
+		<script type="text/javascript" src="./goTo/canvasManipulation/src/main.js"></script>
+		<script type="text/javascript" src="./goTo/canvasManipulation/src/contentControl.js"></script>
+ 
+    </body>
+
+</html>
+
+
