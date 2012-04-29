@@ -242,9 +242,9 @@ $(function() {
 			 console.log(!window.ParticleFor3D);
 			 
 
-				jQuery.getScript(	'./goTo/particles3D/src/ParticleFor3D.js',function(){
+				jQuery.getScript(	'./goTo/Particles3D/src/ParticleFor3D.js',function(){
 					console.log("class Particles loaded");
-					loadXY('./goTo/particles3D/content.html #fillWithThis', './goTo/particles3D/src/Particles3D.js',  function(){return new Particles3D();});
+					loadXY('./goTo/Particles3D/content.html #fillWithThis', './goTo/Particles3D/src/Particles3D.js',  function(){return new Particles3D();});
 				});
 
 	
@@ -256,12 +256,12 @@ $(function() {
 		$('#particles2D').click(function() {
 			 // load dependencies
 			if(!window.ParticleFor2D){
-				jQuery.getScript(	'./goTo/particles2D/src/ParticleFor2D.js',function(){
+				jQuery.getScript(	'./goTo/Particles2D/src/ParticleFor2D.js',function(){
 					console.log("class Particles loaded")
-					loadXY('./goTo/particles2D/content.html #fillWithThis', './goTo/particles2D/src/Particles2D.js',  function(){return new Particles2D();});
+					loadXY('./goTo/Particles2D/content.html #fillWithThis', './goTo/Particles2D/src/Particles2D.js',  function(){return new Particles2D();});
 				});
 		}else		
-			loadXY('./goTo/particles2D/content.html #fillWithThis', './goTo/particles2D/src/Particles2D.js',  function(){return new Particles2D();});
+			loadXY('./goTo/Particles2D/content.html #fillWithThis', './goTo/Particles2D/src/Particles2D.js',  function(){return new Particles2D();});
 					
 			return false;
 		});
